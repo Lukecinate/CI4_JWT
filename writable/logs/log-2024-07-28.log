@@ -1,0 +1,60 @@
+CRITICAL - 2024-07-28 04:20:38 --> ErrorException: Trying to get property '123' of non-object
+in APPPATH\Models\UserModel.php on line 31.
+ 1 APPPATH\Models\UserModel.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'123\' of non-object', 'C:\\Users\\rozan\\Documents\\My Web Sites\\CodeIgniter4_JWT - Copy\\app\\Models\\UserModel.php', 31, [...])
+ 2 APPPATH\Controllers\Auth.php(26): App\Models\UserModel->login('testt@gmail.com', '123')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->login()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\rozan\\Documents\\My Web Sites\\CodeIgniter4_JWT - Copy\\public\\index.php')
+CRITICAL - 2024-07-28 04:21:09 --> ErrorException: Trying to get property '123' of non-object
+in APPPATH\Models\UserModel.php on line 31.
+ 1 APPPATH\Models\UserModel.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'123\' of non-object', 'C:\\Users\\rozan\\Documents\\My Web Sites\\CodeIgniter4_JWT - Copy\\app\\Models\\UserModel.php', 31, [...])
+ 2 APPPATH\Controllers\Auth.php(26): App\Models\UserModel->login('testt@gmail.com', '123')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->login()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\rozan\\Documents\\My Web Sites\\CodeIgniter4_JWT - Copy\\public\\index.php')
+CRITICAL - 2024-07-28 04:23:32 --> ErrorException: Trying to get property '123' of non-object
+in APPPATH\Models\UserModel.php on line 31.
+ 1 APPPATH\Models\UserModel.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'123\' of non-object', 'C:\\Users\\rozan\\Documents\\My Web Sites\\CodeIgniter4_JWT - Copy\\app\\Models\\UserModel.php', 31, [...])
+ 2 APPPATH\Controllers\Auth.php(26): App\Models\UserModel->login('testt@gmail.com', '123')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->login()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\rozan\\Documents\\My Web Sites\\CodeIgniter4_JWT - Copy\\public\\index.php')
+CRITICAL - 2024-07-28 04:24:06 --> Dibi\DriverException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE (`email` = 'testt@gmail.com') AND (`password` = '123')' at line 1
+in VENDORPATH\dibi\dibi\src\Dibi\Drivers\MySqliDriver.php on line 177.
+ 1 VENDORPATH\dibi\dibi\src\Dibi\Drivers\MySqliDriver.php(152): Dibi\Drivers\MySqliDriver::createException('You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near \'WHERE (`email` = \'testt@gmail.com\') AND (`password` = \'123\')\' at line 1', 1064, 'SELECT * FROM WHERE (`email` = \'testt@gmail.com\') AND (`password` = \'123\')')
+ 2 VENDORPATH\dibi\dibi\src\Dibi\Connection.php(288): Dibi\Drivers\MySqliDriver->query('SELECT * FROM WHERE (`email` = \'testt@gmail.com\') AND (`password` = \'123\')')
+ 3 VENDORPATH\dibi\dibi\src\Dibi\Connection.php(223): Dibi\Connection->nativeQuery('SELECT * FROM WHERE (`email` = \'testt@gmail.com\') AND (`password` = \'123\')')
+ 4 APPPATH\Models\UserModel.php(31): Dibi\Connection->query('SELECT * FROM WHERE %and', [...])
+ 5 APPPATH\Controllers\Auth.php(26): App\Models\UserModel->login('testt@gmail.com', '123')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->login()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\rozan\\Documents\\My Web Sites\\CodeIgniter4_JWT - Copy\\public\\index.php')
+INFO - 2024-07-28 04:24:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-28 04:24:37 --> Error: Class 'App\Filters\JWT' not found
+in APPPATH\Filters\AuthFilter.php on line 45.
+ 1 SYSTEMPATH\Filters\Filters.php(184): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 2 SYSTEMPATH\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('getAllUser', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\rozan\\Documents\\My Web Sites\\CodeIgniter4_JWT - Copy\\public\\index.php')
+CRITICAL - 2024-07-28 07:46:12 --> Dibi\DriverException: No connection could be made because the target machine actively refused it.
+
+in VENDORPATH\dibi\dibi\src\Dibi\Drivers\MySqliDriver.php on line 103.
+ 1 VENDORPATH\dibi\dibi\src\Dibi\Connection.php(147): Dibi\Drivers\MySqliDriver->__construct([...])
+ 2 VENDORPATH\dibi\dibi\src\Dibi\Connection.php(108): Dibi\Connection->connect()
+ 3 APPPATH\Models\UserModel.php(14): Dibi\Connection->__construct([...])
+ 4 APPPATH\Controllers\Auth.php(19): App\Models\UserModel->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Auth->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\rozan\\Documents\\My Web Sites\\CodeIgniter4_JWT - Copy\\public\\index.php')
+INFO - 2024-07-28 07:46:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
